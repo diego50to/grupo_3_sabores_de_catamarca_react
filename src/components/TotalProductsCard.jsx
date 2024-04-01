@@ -1,11 +1,10 @@
+import { useContext } from "react";
+import { ProductsContext } from "../contexts/ProductsContext";
 import { BeatLoader } from "react-spinners";
-import { useGetData } from "../../hooks/useGetData";
 import TotalCard from "./TotalCard";
 
 function TotalProductsCard() {
-  const { data, isLoading, error } = useGetData(
-    "http://localhost:3000/api/products"
-  );
+  const { data, isLoading, error } = useContext(ProductsContext);
 
   if (isLoading)
     return (

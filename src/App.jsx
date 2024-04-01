@@ -2,11 +2,7 @@ import "./App.css";
 import DashboardContainer from "./components/DashboardContainer";
 
 function App() {
-  return (
-    <>
-      <DashboardContainer />
-    </>
-  );
+  return <DashboardContainer />;
 }
 
 export default App;
