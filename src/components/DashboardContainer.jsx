@@ -9,9 +9,6 @@ import TotalCardsContainer from "./TotalCardsContainer";
 function DashboardContainer() {
   return (
     <div className="grid-container">
-      <div className="menu-icon">
-        <strong> &#9776;</strong>
-      </div>
       <TopBar />
       <SideBar />
       <main className="main">

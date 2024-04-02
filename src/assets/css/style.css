@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&family=Roboto:wght@200;400;500;600;800&display=swap");
 
 :root {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
@@ -21,7 +21,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 50px;
+  grid-template-rows: 75px 1fr 50px;
 
   grid-template-areas:
     "header"
@@ -35,9 +35,20 @@ body {
   background-color: whitesmoke;
 }
 
+.logo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 60%;
+}
+
 .aside {
   grid-area: aside;
-  background-color: darkblue;
+  background-color: #f86e31;
 }
 
 .main {
@@ -55,7 +66,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: darkblue;
+  color: #728e5d;
   padding: 0 15px;
 }
 
@@ -96,7 +107,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border-bottom: 1px solid lightgreen;
 }
 .overview_card {
   flex-basis: 250px;
@@ -108,9 +118,16 @@ body {
   justify-content: space-between;
   padding: 20px;
   height: 100px;
-  border: 1px solid darkblue;
   border-radius: 4px;
-  color: darkblue;
+  color: #728e5d;
+  background-color: #ffe9de;
+  box-shadow: 5px 4px 4px -1px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 5px 4px 4px -1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 5px 4px 4px -1px rgba(0, 0, 0, 0.21);
+}
+
+.overview_card-info {
+  font-weight: 700;
 }
 /* Layout for main-cards section // below main_overview */
 .main_cards {
@@ -125,15 +142,25 @@ body {
 }
 .card {
   padding: 20px;
-  border: 1px solid tomato;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
-  color: tomato;
+  color: #6c6c6c;
+  font-family: Roboto;
+  box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.21);
 }
 
 .card h2 {
   text-align: center;
   color: #728e5d;
   font-size: 1.2em;
+  margin-top: 0px;
+  font-family: Montserrat;
+}
+
+.card h4 {
+  font-weight: 800;
 }
 
 .card.productList {
@@ -152,6 +179,8 @@ body {
 
 .numbercard {
   font-size: 2em;
+  font-weight: 500;
+  color: #f86e31;
 }
 
 .topcard {
@@ -211,7 +240,7 @@ body {
   .grid-container {
     display: grid;
     grid-template-columns: 240px 1fr;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 75px 1fr 50px;
     grid-template-areas:
       "aside header"
       "aside main"
