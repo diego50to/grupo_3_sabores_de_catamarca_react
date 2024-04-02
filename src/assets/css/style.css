@@ -36,14 +36,14 @@ body {
 }
 
 .logo {
-  width: 25%;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo img {
-  width: 60%;
+  width: 100%;
 }
 
 .aside {
@@ -58,6 +58,10 @@ body {
 .footer {
   grid-area: footer;
   background-color: whitesmoke;
+}
+
+.footer p {
+  font-size: 0.75rem;
 }
 
 /* flexing header and footer*/
